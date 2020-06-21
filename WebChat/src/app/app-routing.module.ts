@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';	
 import { ChatComponent } from './chat/chat.component';
+import { LoginComponent } from './login/login.component';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   { path: 'chat' , component: ChatComponent },
+  { path: '**' , component: LoginComponent },
 ];
 
 @NgModule({
@@ -14,4 +16,5 @@ const routes: Routes = [
 export class AppRoutingModule { }
 export const routingComponents = [
         ChatComponent,
+        LoginComponent
 ]

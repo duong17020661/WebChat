@@ -1,0 +1,24 @@
+#c1 {
+    background-color: blue;
+    display: block-inline;
+    float: left;
+    width: 30%;
+    height: 90vh;
+}
+#c2 {
+    background-color: red;
+    display: block-inline;
+    float: right;
+    width: 70%;
+    height: 70px;
+}
+#c3 {
+    background-color: yellow;
+    float: right;
+    width: 20%;
+}
+#c4 {
+    background-color: green;
+    float: right;
+    width: 50%;
+}
