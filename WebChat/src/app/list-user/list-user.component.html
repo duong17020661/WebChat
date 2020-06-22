@@ -1,1 +1,12 @@
-<p>list-user works!</p>
+<input class="search" type="text" placeholder="&#xF002; Search" style="font-family:Arial, FontAwesome" />
+<div class="user">
+</div>
+<igx-list>
+    <igx-list-item isHeader="true">
+      Contacts
+    </igx-list-item>
+    <igx-list-item *ngFor="let user of users">
+      <h4 igxListLineTitle>{{ user.name }}</h4>
+      <p igxListLineSubTitle>{{ user.phone }}</p>
+    </igx-list-item>
+  </igx-list>

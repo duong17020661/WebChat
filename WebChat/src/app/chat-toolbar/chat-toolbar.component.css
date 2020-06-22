@@ -1,0 +1,33 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li img {
+    align-items: center;
+    display: block;
+    height: 32px;
+    width: 32px;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #4CAF50;
+  }
+  #avatar {
+      border-radius: 50%;
+      height: 32px;
+      width: 32px;
+  }
+  #info {
+      
+  }

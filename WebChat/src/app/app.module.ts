@@ -2,13 +2,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { AppRoutingModule,routingComponents } from './app-routing.module';
+import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { LoginComponent } from './login/login.component';
 import { ChatComponent } from './chat/chat.component';
 import { ListUserComponent } from './list-user/list-user.component';
 import { ChatToolbarComponent } from './chat-toolbar/chat-toolbar.component';
 import { ChatActivityComponent } from './chat-activity/chat-activity.component';
 import { InfoComponent } from './info/info.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { IgxListModule } from 'igniteui-angular';
 
 @NgModule({
   declarations: [
@@ -17,13 +19,16 @@ import { InfoComponent } from './info/info.component';
     ListUserComponent,
     ChatToolbarComponent,
     ChatActivityComponent,
-    InfoComponent
+    InfoComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    IgxListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

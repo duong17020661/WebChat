@@ -1,24 +1,28 @@
 #c1 {
-    background-color: blue;
+    background-color: white;
     display: block-inline;
+    padding-top: 10px;
     float: left;
+    border-right: 1px solid;
     width: 30%;
     height: 90vh;
 }
 #c2 {
-    background-color: red;
+    background-color: white;
     display: block-inline;
     float: right;
     width: 70%;
-    height: 70px;
+    height: 10vh;
 }
 #c3 {
-    background-color: yellow;
+    background-color: white;
     float: right;
     width: 20%;
+    height: 80vh;
 }
 #c4 {
-    background-color: green;
+    background-color: white ;
     float: right;
     width: 50%;
+    height: 80vh;
 }

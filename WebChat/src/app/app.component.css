@@ -6,28 +6,32 @@
   height: 60px;
   display: flex;
   align-items: center;
-  background-color: #1976d2;
-  color: white;
-  font-weight: 600;
+  background-color: white;
+  color: black;
+  box-shadow: 1px 2px 1px #888888;
 }
-
-.toolbar img {
-  margin: 0 16px;
-}
-
-svg.material-icons {
-  height: 24px;
-  width: auto;
-}
-
-svg.material-icons:not(:last-child) {
-  margin-right: 8px;
-}
-
 svg#clouds {
   position: fixed;
   bottom: 0px;
   left: -230px;
   z-index: -10;
   width: 1920px;
+}
+
+#open {
+  margin-left: 24px;
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+}
+#icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+}
+#avatar {
+  margin-left: 1637px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
 }
