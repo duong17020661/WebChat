@@ -1,0 +1,56 @@
+.sender{
+    display: flex;
+    float: right;
+}
+.receiver {
+    display: flex;
+    float: left;
+}
+p.chat_sender {
+    background-color: lightblue;
+    margin-right: 8px;
+    padding: 5px;
+    border: 2px solid red;
+    border-radius: 25px;
+    height: auto;
+    max-width: 200px;
+
+}
+p.chat_receiver {
+    background-color: lightgray;
+    margin-left: 8px;
+    padding: 5px;
+    border: 2px solid red;
+    border-radius: 25px;
+    max-width: 200px;
+}
+.avatar_sender{
+    margin-right: 16px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+.avatar_receiver {
+    margin-left: 16px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+.sendMessage {
+    position: absolute;
+    display: flex;
+    bottom: 0px;
+}
+#info1 {
+    margin-left: 24px;
+    margin-right: 16px;
+}
+#info2 {
+    margin-right: 16px;
+}
+#info3 {
+    margin-right: 24px;
+}
+#message{
+    width: 600px;
+}

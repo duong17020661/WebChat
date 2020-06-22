@@ -10,15 +10,9 @@
   color: black;
   box-shadow: 1px 2px 1px #888888;
 }
-svg#clouds {
-  position: fixed;
-  bottom: 0px;
-  left: -230px;
-  z-index: -10;
-  width: 1920px;
-}
 
 #open {
+  position: relative;
   margin-left: 24px;
   width: 24px;
   height: 24px;
@@ -30,7 +24,9 @@ svg#clouds {
   margin-right: 8px;
 }
 #avatar {
-  margin-left: 1637px;
+  margin-left: auto;
+  margin-right: 16px;
+  order: 2;
   width: 34px;
   height: 34px;
   border-radius: 50%;

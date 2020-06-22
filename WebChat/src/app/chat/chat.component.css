@@ -22,7 +22,9 @@
 }
 #c4 {
     background-color: white ;
+    position: relative;
     float: right;
+    border-right: 1px solid;
     width: 50%;
     height: 80vh;
 }

@@ -6,16 +6,6 @@ form {
     background-color: white;
   }
   
-  /* Full-width inputs */
-  input[type=text], input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-  }
-  
   /* Center the avatar image inside this container */
   .imgcontainer {
     text-align: center;
@@ -114,4 +104,12 @@ form {
     .cancelbtn {
        width: 100%;
     }
+  }
+
+  svg#clouds {
+    position: fixed;
+    bottom: 0px;
+    left: -230px;
+    z-index: -10;
+    width: 1920px;
   }
