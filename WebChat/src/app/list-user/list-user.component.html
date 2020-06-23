@@ -1,12 +1,14 @@
+<div class="main_user_list">
 <input class="search" type="text" placeholder="&#xF002; Search" style="font-family:Arial, FontAwesome" />
 <div class="user">
 </div>
 <igx-list>
-    <igx-list-item isHeader="true">
+    <igx-list-item isHeader="true" style="background-color: #0a1d3b; color: white">
       Contacts
     </igx-list-item>
-    <igx-list-item *ngFor="let user of users">
+    <igx-list-item *ngFor="let user of users" style="background-color: #0a1d3b;color: white">
       <h4 igxListLineTitle>{{ user.name }}</h4>
       <p igxListLineSubTitle>{{ user.phone }}</p>
     </igx-list-item>
   </igx-list>
+</div>

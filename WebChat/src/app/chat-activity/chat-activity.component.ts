@@ -18,7 +18,7 @@ export class ChatActivityComponent implements OnInit {
     message: "Dorothy H. Spencer",
 }];
   public receiver = [{
-  message: "Terrance Orta",
+  message: "Terrance Ortaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
 }, {
   message: "Richard Mahoney",
 }, {

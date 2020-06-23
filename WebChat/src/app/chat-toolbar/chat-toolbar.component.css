@@ -1,12 +1,11 @@
 .toolbar {
   position: static;
   display: flex;
-  height: 80%;
+  height: 100%;
   padding-top: 14px;
   align-items: center;
   background-color: white;
   color: black;
-  box-shadow: 1px 2px 1px #888888;
 }
 #icon_info {
   margin-left: auto;
@@ -30,4 +29,18 @@
   width: 34px;
   height: 34px;
   border-radius: 50%;
+}
+
+#c3 {
+  background-color: #f8f8f8;
+  float: right;
+  width: 25%;
+  height: 80vh;
+}
+#c4 {
+  background-color: white ;
+  position: relative;
+  float: right;
+  width: 75%;
+  height: 80vh;
 }

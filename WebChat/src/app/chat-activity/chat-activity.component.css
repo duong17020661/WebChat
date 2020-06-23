@@ -1,3 +1,5 @@
+.main_chat{
+}
 .sender{
     display: flex;
     float: right;
@@ -38,7 +40,9 @@ p.chat_receiver {
 }
 .sendMessage {
     position: absolute;
+    background-color: #f8f8f8;
     display: flex;
+    width: 100%;
     bottom: 0px;
 }
 #info1 {
@@ -52,5 +56,9 @@ p.chat_receiver {
     margin-right: 24px;
 }
 #message{
-    width: 600px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto ;
+}
+#smile {
 }

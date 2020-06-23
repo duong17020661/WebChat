@@ -4,10 +4,15 @@
         <h4><strong>Trần Hải Dương</strong></h4>
         <p>Hoạt động 2 giờ trước</p>
     </div>
-    <div id="icon_info">
+    <div id="icon_info" ng-controller="myCtrl">
         <img src="/assets/ICON/IconAppChat/4.svg" alt="Search" id="info1">
-        <img src="/assets/ICON/IconAppChat/5.svg" alt="Info" id="info2">
+        <img src="/assets/ICON/IconAppChat/5.svg" (click)=toggleDisplayDivIf() alt="Info" id="info2">
         <img src="/assets/ICON/IconAppChat/2.svg" alt="Open" id="info3">
     </div>
 </div>
-  
+<div id="c3" *ngIf="!isShowDivIf">
+    <app-info></app-info>
+</div>
+<div id="c4">
+    <app-chat-activity></app-chat-activity>
+</div>
