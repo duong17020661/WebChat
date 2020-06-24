@@ -5,7 +5,8 @@ import { LoginComponent } from './login/login.component';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: 'chat' , component: ChatComponent },
+  { path: 'chat/duong' , component: ChatComponent },
+  { path: 'chat/duong/:id', component: ChatComponent},
   { path: '**' , component: LoginComponent },
 ];
 
