@@ -11,3 +11,14 @@
     margin-right: auto;
     border-style: none none solid none;
 }
+.users{
+    position: relative;
+    z-index: 1;
+}
+.users .list h4,p {
+    position: relative;
+}
+.list_users{
+    background-color: white;
+    z-index: 2;
+}

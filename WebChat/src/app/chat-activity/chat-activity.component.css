@@ -3,26 +3,30 @@
 .sender{
     display: flex;
     float: right;
+    margin-bottom: 5px;
 }
 .receiver {
     display: flex;
     float: left;
+    width: 100%;
 }
 p.chat_sender {
-    background-color: lightblue;
+    background-color: #2688e6;
+    color: #ffffff;
+    word-wrap: break-word;
     margin-right: 8px;
-    padding: 5px;
-    border: 2px solid red;
+    padding: 8px;
     border-radius: 25px;
     height: auto;
     max-width: 200px;
 
 }
 p.chat_receiver {
-    background-color: lightgray;
+    background-color: #eeeeee;
+    color: #212121;
+    word-wrap: break-word;
     margin-left: 8px;
-    padding: 5px;
-    border: 2px solid red;
+    padding: 8px;
     border-radius: 25px;
     max-width: 200px;
 }
@@ -58,7 +62,7 @@ p.chat_receiver {
 #message{
     width: 100%;
     margin-left: auto;
-    margin-right: auto ;
+    margin-right: auto;
 }
 #smile {
 }

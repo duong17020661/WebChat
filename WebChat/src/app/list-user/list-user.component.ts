@@ -29,5 +29,14 @@ export class ListUserComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  showlist = false
+
+  show() {
+    this.showlist = !this.showlist;
+  }
+  filterFunction() {
+    
+  }
+  
 }
 

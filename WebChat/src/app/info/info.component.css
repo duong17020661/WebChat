@@ -14,19 +14,20 @@
     border: 3px solid lightblue;
 }
 .file {
-    height: 20%;
     border-bottom: 1px solid white;
     line-height: 1.5;
 }
 .image {
-    height: 40%;
 }
 
 .drop-file{
     background-color: unset;
     color: #666666;
 }
-
+.drop-img{
+    background-color: unset;
+    color: #666666;
+}
 .header {
     float: left;
     font-size: 13px;
@@ -41,4 +42,12 @@
     margin-left: 16px;
     font-size: 16px;
     color: #666666;
+}
+
+#dropdown-file {
+    margin-left: 10px;
+}
+
+#dropdown-img {
+    
 }

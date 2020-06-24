@@ -21,6 +21,6 @@ export class ChatToolbarComponent implements OnInit {
     else {
       document.getElementById("c4").style.width = "100%";
     }
-    
   }
+  
 }

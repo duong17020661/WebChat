@@ -34,15 +34,15 @@
 }
 
 .dropdown a:hover {background-color: #ddd;}
-#show_hide{display:none;}
+#list_users{display:none;}
 .show {display: block;}
 </style>
 </head>
 <body>
   <div id="myDropdown" class="dropdown-content">
-    <input type="text" placeholder="Search.." id="myInput" 				onfocus="document.getElementById('show_hide').style.display='block';"
-    onblur="document.getElementById('show_hide').style.display='none';" onkeyup="filterFunction()">
-    <div id="show_hide">
+    <input type="text" placeholder="Search.." id="myInput" 				onfocus="document.getElementById('list_users').style.display='block';"
+    onblur="document.getElementById('list_users').style.display='none';" onkeyup="filterFunction()">
+    <div id="list_users">
   		<a href="#about">About</a>
       <a href="#base">Base</a>
       <a href="#blog">Blog</a>
@@ -50,7 +50,7 @@
       <a href="#custom">Custom</a>
       <a href="#support">Support</a>
       <a href="#tools">Tools</a>
-</div>
+    </div>
   </div>
 <script>
 
