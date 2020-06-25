@@ -1,9 +1,11 @@
 <div class="toolbar">
-    <img src="/assets/IMG/Avatar/2.jpg" alt="Avatar" id="avatar">
-    <div id='info' *ngFor="let user of users">
-        <div *ngIf="usersID == user.id">
-            <h4><strong>{{ user.name }}</strong></h4>
-            <p>{{ user.status }}</p>
+    <div *ngFor="let user of users">
+        <div id="info" *ngIf="usersID == user.id">
+            <img [src]="user.photo" alt="Avatar" id="avatar">
+            <div id='name_status'>
+                <p style="font-size: 15px; font-weight: 500; color: #212121;">{{ user.name }}</p>
+                <p style="font-size: 14px; color: #757575;">{{ user.status }}</p>
+            </div>
         </div>
     </div>
     <div id="icon_info" ng-controller="myCtrl">

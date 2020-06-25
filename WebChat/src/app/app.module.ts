@@ -10,7 +10,8 @@ import { ChatToolbarComponent } from './chat-toolbar/chat-toolbar.component';
 import { ChatActivityComponent } from './chat-activity/chat-activity.component';
 import { InfoComponent } from './info/info.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { IgxListModule } from 'igniteui-angular';
+import { IgxListModule, IgxAvatarModule, IgxIconModule } from 'igniteui-angular';
+
 
 @NgModule({
   declarations: [
@@ -25,7 +26,9 @@ import { IgxListModule } from 'igniteui-angular';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    IgxListModule
+    IgxListModule,
+    IgxAvatarModule,
+    IgxIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

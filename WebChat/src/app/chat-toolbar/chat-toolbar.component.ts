@@ -29,23 +29,29 @@ export class ChatToolbarComponent implements OnInit {
   public users = [{
     id: 1,
     name: "Terrance Orta",
-    status: "Dang hoat dong"
+    status: "Dang hoat dong",
+    photo: 'https://randomuser.me/api/portraits/men/27.jpg',
 }, {
     id: 2,
     name: "Richard Mahoney",
-    status: "Hoat dong 3 gio truoc"
+    status: "Hoat dong 3 gio truoc",
+    photo: 'https://randomuser.me/api/portraits/men/1.jpg',
 }, {
     id: 3,
     name: "Donna Price",
-    status: "Hoat dong 4 phut truoc"
+    status: "Hoat dong 4 phut truoc",
+    photo: 'https://randomuser.me/api/portraits/women/50.jpg',
 }, {
     id: 4,
     name: "Lisa Landers",
-    status: "Dang hoat dong"
+    status: "Dang hoat dong",
+    photo: 'https://randomuser.me/api/portraits/women/3.jpg',
 }, {
-    id: 100,
+    id: 5,
     name: "Dorothy H. Spencer",
-    status: "Hoat dong 3 ngay truoc"
+    status: "Hoat dong 3 ngay truoc",
+    photo: 'https://randomuser.me/api/portraits/women/67.jpg',
 }];
   
 }
+

@@ -3,13 +3,14 @@
 .sender{
     display: flex;
     float: right;
-    margin-bottom: 5px;
+    margin: 5px;
     align-items: flex-end;
 }
 .receiver {
     display: flex;
     float: left;
     width: 100%;
+    margin: 5px;
     align-items: flex-end;
 }
 p.chat_sender {
@@ -48,23 +49,44 @@ p.chat_receiver {
     position: absolute;
     background-color: #f8f8f8;
     display: flex;
+    align-items: center;
     width: 100%;
     bottom: 0px;
+
 }
 #info1 {
     margin-left: 24px;
     margin-right: 16px;
 }
 #info2 {
-    margin-right: 16px;
+    margin-right: 20px;
 }
 #info3 {
     margin-right: 24px;
+    background-color: #f86060;
+    border-radius: 3px;
+    width: 43px;
+    height: 20px;
+    overflow: hidden;
+    font-size: 13px;
+    font-weight: 500;
+    color: #ffffff;
+    text-align: center;
 }
 #message{
+    position: relative;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    background-color: #ffffff;
+    border-radius: 7.5px;
+    border: 1px solid #e0e0e0;
+    height: 39px;
+    overflow: hidden;
+    margin-right: 16px;
 }
 #smile {
+    position: absolute;
+    right: 0;
+    width: 32px;
+    height: 32px;
+    margin-right: 32px;
 }

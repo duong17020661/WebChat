@@ -1,14 +1,16 @@
-<div class="info">
-    <img src="/assets/IMG/Avatar/2.jpg" alt="Avatar" id="avatar">
-    <br>
-    <p style="font-size: 20px;"><strong>Tran Hai Duong</strong></p>
-    <p style="font-size: 16px;">01678287075</p>
-    <p style="font-size: 16px;">duong@abc.com</p>
+<div *ngFor="let user of users">
+    <div class="info" *ngIf="usersID == user.id">
+        <img [src]="user.photo" alt="Avatar" id="avatar">
+        <br>
+        <p style="font-size: 20px; font-weight: 700; color: #212121;"><strong>{{ user.name }}</strong></p>
+        <p style="font-size: 16px; letter-spacing: -.13px; color: #666666;">{{ user.phone }}</p>
+        <p style="font-size: 16px; letter-spacing: -.13px; color: #666666;">{{ user.email }}</p>
+    </div>
 </div>
 <div class="file">
     <button type="button" class="drop-file" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false" (click)=toggleDisplayFile()>
         <img src="/assets/ICON/IconAppChat/13.svg" alt="Drop" id="drop">
-        <p class="header">Dropdown header</p>
+        <p class="header" style="font-size: 16px; letter-spacing: -.13px; color: #666666;">TỆP ĐÃ CHIA SẺ</p>
     </button>
     <div *ngIf="!isShowFile" id="dropdown-file">
         <ul type="square" *ngFor="let file of files">
@@ -22,7 +24,7 @@
 <div class="image">
     <button type="button" class="drop-img" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false" (click)=toggleDisplayImg()>
         <img src="/assets/ICON/IconAppChat/13.svg" alt="Drop" id="drop">
-        <p class="header">Dropdown header</p>
+        <p class="header" style="font-size: 16px; letter-spacing: -.13px; color: #666666;">ẢNH ĐÃ CHIA SẺ</p>
     </button>
     <div *ngIf="!isShowImg" id="dropdown-img">
         <ul type="square" class="center">

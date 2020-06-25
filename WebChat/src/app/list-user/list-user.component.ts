@@ -12,30 +12,41 @@ export class ListUserComponent implements OnInit {
 
   public users = [{
     id: 1,
-    name: "Terrance Orta",
-    phone: "770-504-2217"
+    name: 'Terrance Orta',
+    lastMessage: '770-504-2217',
+    photo: 'https://randomuser.me/api/portraits/men/27.jpg',
+    status: true,
 }, {
     id: 2,
-    name: "Richard Mahoney",
-    phone: "423-676-2869"
+    name: 'Richard Mahoney',
+    lastMessage: '770-504-2217',
+    photo: 'https://randomuser.me/api/portraits/men/1.jpg',
+    status: false,
 }, {
     id: 3,
-    name: "Donna Price",
-    phone: "859-496-2817"
+    name: 'Donna Price',
+    lastMessage: '859-496-2817',
+    photo: 'https://randomuser.me/api/portraits/women/50.jpg',
+    status: false,
 }, {
     id: 4,
-    name: "Lisa Landers",
-    phone: "901-747-3428"
+    name: 'Lisa Landers',
+    lastMessage: '901-747-3428',
+    photo: 'https://randomuser.me/api/portraits/women/3.jpg',
+    status: true,
 }, {
-    id: 100,
-    name: "Dorothy H. Spencer",
-    phone: "573-394-9254"
+    id: 5,
+    name: 'Dorothy H. Spencer',
+    lastMessage: '573-394-9254',
+    photo: 'https://randomuser.me/api/portraits/women/67.jpg',
+    status: false,
 }];
   spinnerService: any;
 
   constructor(private router: Router) { }
 
   ngOnInit(): void {
+    
   }
 
   onSelect(user) {
@@ -50,9 +61,7 @@ export class ListUserComponent implements OnInit {
   show() {
     this.showlist = !this.showlist;
   }
-  filterFunction() {
-    
-  }
+
   values = '';
   onKey(event) {
     var a = document.getElementById('myDropdown').getElementsByTagName('a')
