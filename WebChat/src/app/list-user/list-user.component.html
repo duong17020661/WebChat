@@ -12,8 +12,7 @@
         </div>
       </div>
     </div>
-  <igx-list class="users">
-    <igx-list-item (click)="onSelect(user)" *ngFor="let user of users" style="background-color: #0a1d3b;color: white" class="list">
+    <div id="item" (click)="onSelect(user)" *ngFor="let user of users" style="background-color: #0a1d3b;color: white" class="list">
       <div id="user">
       <igx-avatar igxListThumbnail [src]="user.photo" roundShape="true"></igx-avatar>
       <span class="status" *ngIf="user.status"></span>
@@ -22,6 +21,5 @@
         <p igxListLineSubTitle class="phone">{{ user.lastMessage }}</p>
       </div>
       </div>
-    </igx-list-item>
-  </igx-list>
+    </div>
 </div>

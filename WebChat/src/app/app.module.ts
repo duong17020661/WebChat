@@ -28,7 +28,7 @@ import { IgxListModule, IgxAvatarModule, IgxIconModule } from 'igniteui-angular'
     BrowserAnimationsModule,
     IgxListModule,
     IgxAvatarModule,
-    IgxIconModule
+    IgxIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,17 +1,19 @@
-<div class="main_chat" *ngFor="let sender of sender, let receiver of receiver">
-    <div class="sender">
-        <p class="chat_sender">{{ sender.message }}</p>
-        <img src="/assets/IMG/Avatar/1.jpg" alt="Avatar" class="avatar_sender">
-    </div>    
-    <div class="receiver">
-        <img src="/assets/IMG/Avatar/2.jpg" alt="Avatar" class="avatar_receiver">
-        <p class="chat_receiver">{{ receiver.message }}</p>
+<div class="main_chat">
+    <div *ngFor="let message of message">
+        <div class="sender">
+            <p class="chat_sender">{{ message }}</p>
+            <img src="/assets/IMG/Avatar/1.jpg" alt="Avatar" class="avatar_sender">
+        </div>    
+        <div class="receiver">
+            <img src="/assets/IMG/Avatar/2.jpg" alt="Avatar" class="avatar_receiver">
+            <p class="chat_receiver">{{ message }}</p>
+        </div>
     </div>
-</div>
+</div> 
 <div class="sendMessage">
     <img src="/assets/ICON/IconAppChat/10.svg" alt="File" id="info1">
     <img src="/assets/ICON/IconAppChat/9.svg" alt="Image" id="info2">
     <p id="info3">Buzz</p>
-    <input type="text" id="message" placeholder="Nhập nội dung tin nhắn, gõ @tên để nhắc tên"/>
+    <input type="text" id="message" placeholder="Nhập nội dung tin nhắn, gõ @tên để nhắc tên" #box (keyup.enter)="onEnter(box.value); box.value=''" />
     <img src="/assets/ICON/IconAppChat/7.svg" alt="Smile" id="smile" >  
 </div> 

@@ -1,4 +1,6 @@
 .main_chat{
+    overflow: scroll;
+    height: 95%;
 }
 .sender{
     display: flex;

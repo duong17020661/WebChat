@@ -53,7 +53,6 @@ export class ListUserComponent implements OnInit {
     this.router.navigateByUrl('/RefreshComponent', { skipLocationChange: true }).then(() => {
         this.router.navigate(['chat/duong', user.id]);
     }); 
-    
   }
 
   showlist = false
