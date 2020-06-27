@@ -1,7 +1,7 @@
 .main_chat{
     overflow: scroll;
     overflow: hidden;
-    height: 95%;
+    height: 75vh;
 }
 .sender{
     display: flex;
@@ -54,7 +54,7 @@ p.chat_receiver {
     display: flex;
     align-items: center;
     width: 100%;
-    bottom: 1vh;
+    bottom: 0;
 }
 #info1 {
     margin-left: 24px;

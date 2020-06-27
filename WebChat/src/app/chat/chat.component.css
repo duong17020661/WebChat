@@ -1,12 +1,15 @@
 #c1 {
     background-color: #0a1d3b;
+    position: relative;
     display: block-inline;
     float: left;
     width: 25%;
-    height: 95vh;
+    min-width: 200px;
+    height: 92vh;
 }
 #c2 {
     background-color:  #ffffff;
+    position: relative;
     display: block-inline;
     float: right;
     width: 75%;
