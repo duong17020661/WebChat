@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ChatActivityService } from './chat-activity.service';
+import { ActivatedRoute } from '@angular/router';
 
 
 @Component({
@@ -7,15 +9,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./chat-activity.component.css']
 })
 export class ChatActivityComponent implements OnInit {
-  constructor() { }
+
+  public userID;
+  public messages = []
+
+  constructor(private _chatservice: ChatActivityService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this._chatservice.getUsers().subscribe(data => this.messages = data);
+    let id = parseInt(this.route.snapshot.paramMap.get('id'));
+    this.userID = id;
   }
 
-  message = ['Windstorm', 'Bombasto', 'Magneta', 'Tornado'];
+
   onEnter(value: string) {
     if (value) {
-      this.message.push(value);
+      this.messages.push(value);
     }
     value = ""
   }

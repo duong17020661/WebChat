@@ -1,6 +1,6 @@
 .toolbar {
   display: flex;
-  height: 10vh;
+  height: 60px;
   align-items: center;
   background-color: white;
   color: black;
@@ -38,12 +38,11 @@
   position: relative;
   float: right;
   width: 25%;
-  min-width: 200px;
-  height: 82vh;
+  height: 84vh;
 }
 #c4 {
   background-color: white ;
   position: relative;
   width: 75%;
-  height: 82vh;
+  height: 84vh;
 }

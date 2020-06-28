@@ -1,15 +1,15 @@
-<div class="main_chat">
-    <div *ngFor="let message of message">
-        <div class="sender">
-            <p class="chat_sender">{{ message }}</p>
-            <img src="/assets/IMG/Avatar/1.jpg" alt="Avatar" class="avatar_sender">
-        </div>    
-        <div class="receiver">
-            <img src="/assets/IMG/Avatar/2.jpg" alt="Avatar" class="avatar_receiver">
-            <p class="chat_receiver">{{ message }}</p>
-        </div>
-    </div>
-</div> 
+<div class="messages">
+    <ul *ngFor="let message of messages">
+        <li class="sent" *ngIf="message.senderID == 0 && message.receiverID == userID">
+            <img src="http://emilcarlsson.se/assets/mikeross.png" alt="" />
+            <p>{{ message.message }}</p>
+        </li>
+        <li class="replies" *ngIf="message.receiverID == 0 && message.senderID == userID">
+            <img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
+            <p>{{ message.message }}</p>
+        </li>
+    </ul>
+</div>
 <div class="sendMessage">
     <img src="/assets/ICON/IconAppChat/10.svg" alt="File" id="info1">
     <img src="/assets/ICON/IconAppChat/9.svg" alt="Image" id="info2">

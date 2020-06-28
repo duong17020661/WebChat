@@ -1,17 +1,16 @@
+.content{
+    display: flex;
+}
 #c1 {
     background-color: #0a1d3b;
     position: relative;
-    display: block-inline;
     float: left;
-    width: 25%;
-    min-width: 200px;
     height: 92vh;
 }
 #c2 {
-    background-color:  #ffffff;
+    background-color:  red;
     position: relative;
-    display: block-inline;
-    float: right;
-    width: 75%;
+    float: left;
+    flex-grow: 1;
     height: 10vh;
 }
