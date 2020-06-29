@@ -22,11 +22,14 @@ export class ListUserComponent implements OnInit {
 public users = [];
 
   spinnerService: any;
+  searchTerm: any;
+  itemsCopy = [];
 
   constructor(private router: Router, private _userservice: ListUserService) { }
 
   ngOnInit(): void {
       this._userservice.getUsers().subscribe(data => this.users = data);
+      this._userservice.getUsers().subscribe(data => this.itemsCopy = data);
   }
 
   onSelect(user) {
@@ -34,25 +37,12 @@ public users = [];
         this.router.navigate(['chat/duong', user.id]);
     }); 
   }
-
-  showlist = false
-
-  show() {
-    this.showlist = !this.showlist;
-  }
-
-  values = '';
-  onKey(event) {
-    var a = document.getElementById('myDropdown').getElementsByTagName('a')
-    this.values = event.target.value;
-    for (var i = 0; i < a.length; i++) {
-      let txtValue = a[i].textContent || a[i].innerText;
-      if (txtValue.toUpperCase().indexOf(this.values.toUpperCase()) > -1) {
-        a[i].style.display = "";
-      } else {
-        a[i].style.display = "none";
-      }
-    }
+  search(): void {
+    let term = this.searchTerm;
+    console.log(this.itemsCopy)
+    this.users = this.itemsCopy.filter(function(tag) {
+        return tag.name.indexOf(term) >= 0;
+    }); 
   }
   
 }

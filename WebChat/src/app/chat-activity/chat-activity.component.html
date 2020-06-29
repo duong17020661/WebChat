@@ -1,10 +1,10 @@
-<div class="messages">
-    <ul *ngFor="let message of messages">
-        <li class="sent" *ngIf="message.senderID == 0 && message.receiverID == userID">
+<div class="messages" #scrollframe>
+    <ul *ngFor="let message of messages" #item>
+        <li class="replies" *ngIf="message.senderID == 0 && message.receiverID == userID">
             <img src="http://emilcarlsson.se/assets/mikeross.png" alt="" />
             <p>{{ message.message }}</p>
         </li>
-        <li class="replies" *ngIf="message.receiverID == 0 && message.senderID == userID">
+        <li class="sent" *ngIf="message.receiverID == 0 && message.senderID == userID">
             <img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
             <p>{{ message.message }}</p>
         </li>

@@ -1,22 +1,16 @@
 <div class="main_user_list" ng-controller="filterctrl">
-    <div class="search_user d-none d-lg-block" (click)="show()">
-      <div class="search" >
-        <input id="myInput" class="search_button" type="text" placeholder="&#xF002; Tìm kiếm cuộc trò chuyện" style="font-family:Arial, FontAwesome" (focus)="show()" (keyup)="onKey($event)"/>
-        <img src="../../assets/ICON/IconAppChat/3.svg" alt="Add" class="add_button">  
-      </div>
-      <div id="myDropdown" class="dropdown-content">
-        <div *ngFor="let user of users">
-          <div id="list_users" *ngIf="showlist">
-            <a href="#" style="color: white;">{{ user.name }}</a>
-          </div>
-        </div>
-      </div>
+  <div class="search_user d-none d-lg-block">
+    <div class="search">
+      <input id="myInput" class="search_button" type="text" placeholder="&#xF002; Tìm kiếm cuộc trò chuyện" style="font-family:Arial, FontAwesome" [(ngModel)] = "searchTerm" (ngModelChange) = "search()"/>
+      <img src="../../assets/ICON/IconAppChat/3.svg" alt="Add" class="add_button">
     </div>
-    <div id="item" (click)="onSelect(user)" *ngFor="let user of users" style="background-color: #0a1d3b;color: white" class="list">
-      <div id="user">
+  </div>
+  <div id="item" (click)="onSelect(user)" *ngFor="let user of users" style="background-color: #0a1d3b;color: white"
+    class="list">
+    <div id="user" class="users">
       <igx-avatar igxListThumbnail [src]="user.photo" roundShape="true"></igx-avatar>
       <span class="status" *ngIf="user.status"></span>
-      <div class="info d-none d-lg-block">
+      <div class="info d-none d-lg-block" style="display: none;">
         <div style="float: left;width: 200px;">
           <h4 igxListLineTitle>{{ user.name }}</h4>
           <p igxListLineSubTitle class="phone">{{ user.lastMessage }}</p>
@@ -26,4 +20,4 @@
         </div>
       </div>
     </div>
-</div>
+  </div>
