@@ -29,7 +29,8 @@
     margin: 6px 8px 0 0;
   }
   .messages ul li.sent p {
-    background: #eeeeee;;
+    background: #eeeeee;
+    word-wrap: break-word;
     color: #212121;;
   }
   .messages ul li.replies img {
@@ -38,7 +39,8 @@
   }
   .messages ul li.replies p {
     background: #2688e6;
-    color: #ffffff;;
+    color: #ffffff;
+    word-wrap: break-word;
     float: right;
   }
   .messages ul li img {
